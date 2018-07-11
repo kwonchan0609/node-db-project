@@ -1,28 +1,137 @@
-.App {
-  text-align: center;
+*{box-sizing:border-box}
+
+body{
+  background:url('http://i.imgur.com/JAxMcBl.jpg') top center;
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.pokedexlogo{
+  width:50vw;
+  height:auto;
+  display: flex;
+  flex-direction: center;
+  justify-content: space-around;
+  
+}
+section{
+background: url(http://gran4u.xtgem.com/Pokedex.png);
+background-repeat: no-repeat;
+background-size: 700px 500px;
+width: 700px;
+height:500px;
+border-radius:40px; 
+overflow: hidden;
+border: 9px solid red
+
+
+}
+.changesearch{
+  margin:30px;
+}
+.inputbox{
+  width:200px;
+  height:30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.searchbutton{
+  width:100px;;
+  height:30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.App-intro {
-  font-size: large;
+.dueldiv{
+  width:100%;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+ 
+ 
 }
+.pokemonpic{
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+width:50%;
+height:100%;
+display: flex;
+align-items: center;
+align-self: stretch;
+
+margin-top: 45px;
+  margin-left: 27px
+}
+.pokemonpic img{
+  height:250px;
+
+  
+}
+.pokemoninfo{
+  font-size: 25px;
+
+  margin-left: 127px;
+  margin-top: 52px;
+width:50%;
+height:100%;
+
+}
+.addbutton{
+width:100px;
+height:95px;
+float:right;
+font-size: 30px;
+background: yellow;
+border-left:2px solid black
+}
+main{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS30JGizue7MKiE4O3SxGLaiQtnDh-k-SG0aqcLBRpvy8R6pVkF');
+  background-repeat: no-repeat;
+background-size: 400px 200px;
+  margin:30px;
+  border-radius: 10px;
+  overflow: hidden;
+flex-wrap: wrap;
+  
+
+}
+.twodiv{
+  width:400px;
+  height:200px;
+ display: flex;
+ flex-direction: row;
+  
+}
+.pokemonimage{
+background: url('pokeball-cutout.png') center;
+
+background-size: 60%;
+width:200px;
+background-repeat: no-repeat;
+
+
+}
+.pokemonimage img{
+  height:150px;
+  margin-left: 28px;
+ margin-top: 15px;
+}
+.cardinfo{
+  margin-top:25px;
 }
